@@ -225,21 +225,6 @@ h1 p h4 {
   background-repeat: no-repeat;
 }
 
-/* #automationText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: auto;
-  padding: 100px 0;
-  margin: 0 auto;
-} */
-
-#automationText p {
-  color: #6f6f6f;
-}
-
 h4 {
   color: #0679fb;
 }
@@ -350,7 +335,7 @@ h4 {
   align-items: center;
   text-align: center;
   width: 100%;
-  margin: 0 20px;
+  margin: 0 40px;
   background-color: #f6fbff;
   border: 1px solid #efefef;
   border-radius: 10px;
@@ -460,10 +445,47 @@ button {
 
 /* TESTIMONIA ENDS HERe */
 
+.footer {
+  background-color: #1a3866;
+  color: #fff;
+}
+
+.footerWrapper {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footDiv {
+  /* background-color: #0679fb; */
+  padding: 10px;
+  flex: 1;
+}
+
 @media screen and (max-width: 600px) {
-  .margin100Vertical {
+  /* .margin100Vertical {
     margin-bottom: 50px;
+  } */
+
+  .footer {
+    background-color: #1a3866;
+    padding: 20px 0;
+    color: #fff;
   }
+
+  .footerWrapper {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footDiv {
+    padding: 10px;
+    flex: 1;
+  }
+
   .background-div {
     padding-top: 50px;
     width: 100%;
