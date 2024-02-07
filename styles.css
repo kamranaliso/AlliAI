@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .content {
@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 
 #topnav {
@@ -531,7 +532,6 @@ button {
 
   #topnav {
     position: absolute;
-
     width: 100%;
     background-color: white;
     height: 100vh;
@@ -539,8 +539,18 @@ button {
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px;
+  }
+
+  #topnav a {
+    font-size: large;
+    padding-left: 50px;
+  }
+
+  #topnav a:hover {
+    font-size: large;
+    padding-left: 50px;
   }
   #logo {
     width: 100%;
