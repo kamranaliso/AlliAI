@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
 }
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "poppins";
   font-size: small;
-  background-color: white;
+  /* background-color: pink; */
 }
 
 #header {
@@ -90,9 +97,8 @@ body {
   max-height: fit-content;
   object-fit: fill;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
+  padding: 0px;
 }
 #partnersLogos {
   display: flex;
@@ -287,8 +293,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
-  /* margin-top: -600px; */
 }
 
 .slider {
@@ -300,30 +304,10 @@ h4 {
   transition: transform 0.5s ease;
 }
 
-.card {
-  padding: 50px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* min-width: 400px;
-  max-width: 600px;
-  min-height: 200px;
-  max-height: 300px; */
-
-  width: 100%;
-  margin: 0 20px;
-  background-color: #f6fbff;
-  border: 1px solid #efefef;
-  border-radius: 10px;
-}
-
 .arrowBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
   min-width: 50px;
   min-height: 50px;
   border-radius: 25px;
@@ -332,17 +316,56 @@ h4 {
   border-radius: 10px;
 }
 
+.arrowBtn2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 25px;
+  background-color: #f6fbff;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+
+.card {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 20px;
+  background-color: #f6fbff;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+
+.imgBorder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -320px;
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  border: 5px solid #0679fb;
+  border-radius: 150px;
+}
+
 .patternLeft {
   width: 100px;
   position: relative;
   top: -100px;
-  left: -350px;
+  left: -400px;
 }
 .patternRight {
   width: 100px;
   position: relative;
   bottom: -130px;
-  right: -350px;
+  right: -400px;
 }
 
 .imgBorder {
@@ -379,9 +402,12 @@ h4 {
 }
 .navigation {
   display: flex;
+  width: 100%;
+  /* background-color: #0679fb; */
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin: 10px;
+  padding: 10px 0;
 }
 
 .indicators {
@@ -421,6 +447,47 @@ button {
 /* TESTIMONIA ENDS HERe */
 
 @media screen and (max-width: 600px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .patternLeft {
+    display: none;
+    margin: 0 10px;
+    width: 100px;
+    position: relative;
+    top: -100px;
+    left: -150px;
+  }
+  .patternRight {
+    display: none;
+    width: 100px;
+    position: relative;
+    bottom: -230px;
+    right: -200px;
+  }
+
+  .arrowBtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 25px;
+    background-color: #f6fbff;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+  }
+
+  .card {
+    padding-top: 230px;
+    margin: 0 10px;
+  }
+
+  .arrowBtn2 {
+    display: flex;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
