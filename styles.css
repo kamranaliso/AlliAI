@@ -13,14 +13,12 @@ body {
   padding: 0;
   font-family: "poppins";
   font-size: small;
-  /* background-color: pink; */
 }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 20px; */
 }
 
 .content {
@@ -60,7 +58,6 @@ body {
   background-color: orange;
   border-radius: 50px;
   padding: 15px 30px;
-  /* border: 0px solid #0679fb; */
   text-decoration: none;
   color: #fff;
 }
@@ -194,9 +191,6 @@ h1 p h4 {
 .missionStatementImage {
   width: 450px;
   margin-bottom: 32px;
-
-  /* margin-top: -150px;
-  margin-bottom: -56px; */
 }
 
 .automationStepsWrapper {
@@ -205,6 +199,7 @@ h1 p h4 {
   margin-bottom: 40px;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .automationStepsWrapper p {
@@ -219,16 +214,15 @@ h1 p h4 {
 }
 .automationStepsImageWrapper img {
   max-width: 400px;
-  /* min-width: 150px; */
 }
 
 .background-div {
-  width: 100%; /* Set the width of the div */
-  height: auto; /* Set the height of the div */
-  background-image: url("assets/images/Frame.png"); /* Set the URL of your background image */
-  background-size: cover; /* Cover the entire div with the background image */
-  background-position: center; /* Center the background image */
-  /* Optionally, you can add more styles like padding, margin, etc. */
+  width: 100%;
+  height: auto;
+  background-image: url("assets/images/Frame.png");
+  background-size: contain;
+
+  background-repeat: no-repeat;
 }
 
 /* #automationText {
@@ -265,8 +259,8 @@ h4 {
 }
 
 .margin100Vertical {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .grid-container {
@@ -278,7 +272,6 @@ h4 {
   color: #6f6f6f;
 }
 .grid-item {
-  /* background-color: #ddd; */
   padding: 20px;
   text-align: center;
 }
@@ -293,13 +286,22 @@ h4 {
   object-fit: fill;
   opacity: 0.3;
   position: relative;
-  /* top: 0;
-  left: 0; */
+
   z-index: -1;
 }
 
+.bgImage1 {
+  width: 100%;
+  height: 450px;
+  background-color: #0679fb;
+  max-height: fit-content;
+  object-fit: fill;
+  position: absolute;
+  z-index: -1;
+  padding: 0px;
+}
+
 .slider-container {
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -459,6 +461,17 @@ button {
 /* TESTIMONIA ENDS HERe */
 
 @media screen and (max-width: 600px) {
+  .margin100Vertical {
+    margin-bottom: 50px;
+  }
+  .background-div {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    background-image: url("assets/images/Frame.png");
+    background-size: cover;
+    background-position: center;
+  }
   .navigation {
     justify-content: space-between;
   }
@@ -503,8 +516,14 @@ button {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px;
+    grid-gap: 5px;
   }
+
+  .grid-item {
+    /* background-color: #0679fb; */
+    padding: 10px;
+  }
+
   .automationStepsWrapper {
     display: flex;
     flex-direction: column;
