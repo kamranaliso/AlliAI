@@ -548,9 +548,9 @@ button {
     overflow: hidden;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px;
+    padding: 50px 10px;
   }
 
   #topnav a {
