@@ -15,16 +15,46 @@ body {
   font-size: small;
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .content {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.blueBg {
+  padding-top: 55px;
+  padding-bottom: 40px;
+  background-color: #0679fb;
+}
+
+.blueBg,
+h1 p h4 {
+  color: #fff;
+}
+
+h4 {
+  color: #0679fb;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.margin100Vertical {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+/* Header and navigation */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -53,17 +83,6 @@ body {
   padding: 10px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: orange;
-  border-radius: 50px;
-  padding: 15px 30px;
-  text-decoration: none;
-  color: #fff;
-}
-.btn a {
-  color: #fff;
-}
 #loginBtn {
   display: flex;
   justify-content: center;
@@ -74,6 +93,18 @@ body {
 #menuIcon {
   display: none;
 }
+
+.headerBgImage {
+  width: 100%;
+  height: 450px;
+  max-height: fit-content;
+  object-fit: fill;
+  position: absolute;
+  z-index: -1;
+  padding: 0px;
+}
+
+/* Hero Area Section */
 
 #heroArea {
   display: flex;
@@ -88,22 +119,33 @@ body {
 #heroArea p {
   color: #6f6f6f;
 }
-
-.headerBgImage {
-  width: 100%;
-  height: 450px;
-  max-height: fit-content;
-  object-fit: fill;
-  position: absolute;
-  z-index: -1;
-  padding: 0px;
+#heroArea h1,
+p {
+  margin: 10px 0;
 }
+
+.btn {
+  display: inline-block;
+  background-color: #feba00;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Partners Logos */
+
 #partnersLogos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
   padding: 10px;
+}
+
+#partnersLogos img {
+  padding: 10px 20px;
 }
 
 .borderedBox {
@@ -118,6 +160,7 @@ body {
   margin: 5px;
 }
 
+/* 3 Horizontal cards for Business styles */
 .cardsWrapper {
   text-align: center;
   margin-top: 100px;
@@ -130,15 +173,6 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 10px;
-}
-
-#heroArea h1,
-p {
-  margin: 10px 0;
-}
-
-#partnersLogos img {
-  padding: 10px 20px;
 }
 
 .card1 {
@@ -156,20 +190,11 @@ img {
   padding-right: 10px;
 }
 
+/* Mission Statement */
+
 #MissonStatementWrapper {
   margin-top: 100px;
   background-color: #0679fb;
-}
-
-.blueBg {
-  padding-top: 55px;
-  padding-bottom: 40px;
-  background-color: #0679fb;
-}
-
-.blueBg,
-h1 p h4 {
-  color: #fff;
 }
 
 .MissonStatement {
@@ -178,20 +203,22 @@ h1 p h4 {
   align-items: center;
   color: #ffff;
 }
-.imgWrapper {
-  margin-top: -100px;
-  margin-bottom: -60px;
-}
 
 .missionText {
   padding: 50px 0;
   margin-bottom: -10px;
+}
+.imgWrapper {
+  margin-top: -100px;
+  margin-bottom: -60px;
 }
 
 .missionStatementImage {
   width: 450px;
   margin-bottom: 32px;
 }
+
+/* SEO Automation and 3 steps with illustrations */
 
 .automationStepsWrapper {
   display: flex;
@@ -221,12 +248,7 @@ h1 p h4 {
   height: auto;
   background-image: url("assets/images/Frame.png");
   background-size: contain;
-
   background-repeat: no-repeat;
-}
-
-h4 {
-  color: #0679fb;
 }
 
 .inverted {
@@ -235,19 +257,7 @@ h4 {
   text-align: right;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.margin100Vertical {
-  padding-top: 100px;
-  padding-bottom: 60px;
-}
-
+/* Grid of 9 feautures with icons */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -263,35 +273,13 @@ h4 {
 
 /* TESTIMONIA STARTS FROM HERE */
 
-.bgImage {
-  margin-top: -100px;
-  width: 100%;
-  height: 700px;
-  max-height: fit-content;
-  object-fit: fill;
-  opacity: 0.3;
-  position: relative;
-
-  z-index: -1;
-}
-
-.bgImage1 {
-  width: 100%;
-  height: 450px;
-  background-color: #0679fb;
-  max-height: fit-content;
-  object-fit: fill;
-  position: absolute;
-  z-index: -1;
-  padding: 0px;
-}
-
 .slider-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .slider {
@@ -341,19 +329,6 @@ h4 {
   border-radius: 10px;
 }
 
-.imgBorder {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -320px;
-  width: 140px;
-  height: 140px;
-  background-color: #fff;
-  border: 5px solid #0679fb;
-  border-radius: 150px;
-}
-
 .patternLeft {
   width: 100px;
   position: relative;
@@ -379,7 +354,6 @@ h4 {
   border: 5px solid #0679fb;
   border-radius: 150px;
 }
-
 .imgContainer {
   width: 130px;
   height: 130px;
@@ -423,27 +397,7 @@ h4 {
   cursor: pointer;
 }
 
-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  border: 0px;
-  font-weight: bolder;
-  color: #fff;
-  background-color: #0679fb;
-}
-
-.btn1 {
-  width: 100px;
-  height: 40px;
-  border-radius: 25px;
-  border: 0px;
-  font-weight: bolder;
-  color: #fff;
-  background-color: #0679fb;
-}
-
-/* TESTIMONIA ENDS HERe */
+/* FOOTER STARTS HERE */
 
 .footer {
   background-color: #1a3866;
@@ -458,117 +412,11 @@ button {
 }
 
 .footDiv {
-  /* background-color: #0679fb; */
   padding: 10px;
   flex: 1;
 }
 
 @media screen and (max-width: 600px) {
-  /* .margin100Vertical {
-    margin-bottom: 50px;
-  } */
-
-  .footerWrapper {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .footDiv {
-    padding: 20px 10px;
-  }
-
-  .background-div {
-    padding-top: 50px;
-    width: 100%;
-    height: auto;
-    background-image: url("assets/images/Frame.png");
-    background-size: cover;
-    background-position: center;
-  }
-  .navigation {
-    justify-content: space-between;
-  }
-  .patternLeft {
-    display: none;
-    margin: 0 10px;
-    width: 100px;
-    position: relative;
-    top: -100px;
-    left: -150px;
-  }
-  .patternRight {
-    display: none;
-    width: 100px;
-    position: relative;
-    bottom: -230px;
-    right: -200px;
-  }
-
-  .arrowBtn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    min-width: 50px;
-    min-height: 50px;
-    border-radius: 25px;
-    background-color: #f6fbff;
-    border: 1px solid #efefef;
-    border-radius: 10px;
-  }
-
-  .card {
-    padding-top: 270px;
-    margin: 0px 0px;
-  }
-
-  .arrowBtn2 {
-    display: flex;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-  }
-
-  .grid-item {
-    /* background-color: #0679fb; */
-    padding: 10px;
-  }
-
-  .automationStepsWrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .automationStepsImageWrapper {
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    margin: 10px;
-  }
-  .automationStepsImageWrapper img {
-    max-width: 80%;
-  }
-
-  .automationStepsTextWrapper {
-    text-align: center;
-    margin-left: 0px;
-  }
-  .automationStepsImageWrapper {
-  }
-
-  .inverted {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
   #header {
     flex-direction: column;
   }
@@ -635,5 +483,104 @@ button {
   }
   .cardsWrapper {
     margin-top: 50px;
+  }
+  .footerWrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footDiv {
+    padding: 20px 10px;
+  }
+
+  .background-div {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    background-image: url("assets/images/Frame.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .patternLeft {
+    display: none;
+    margin: 0 10px;
+    width: 100px;
+    position: relative;
+    top: -100px;
+    left: -150px;
+  }
+  .patternRight {
+    display: none;
+    width: 100px;
+    position: relative;
+    bottom: -230px;
+    right: -200px;
+  }
+
+  .arrowBtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 25px;
+    background-color: #f6fbff;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+  }
+
+  .card {
+    padding-top: 270px;
+    margin: 0px 0px;
+  }
+
+  .arrowBtn2 {
+    display: flex;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
+  .automationStepsWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .automationStepsImageWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin: 10px;
+  }
+  .automationStepsImageWrapper img {
+    max-width: 80%;
+  }
+
+  .automationStepsTextWrapper {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .automationStepsImageWrapper {
+  }
+
+  .inverted {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
